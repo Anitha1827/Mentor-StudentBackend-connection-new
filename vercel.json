@@ -1,6 +1,6 @@
 {
     "version" : 2,
-    "name" : "student-application",
+    "name" : "mentor-student-backend-connection-new-task",
     "builds" : [
         {
             "src":"./index.js",
