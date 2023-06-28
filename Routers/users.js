@@ -1,6 +1,6 @@
 import express from 'express'
 import bcrypt from "bcrypt"
-import { addUsers, generateJwtToken, getUser } from '../Controllers/Users.js';
+import { addUsers, generateJwtToken, getUser } from '../Controllers/users.js';
 
 const router = express.Router();
 
