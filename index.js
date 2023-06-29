@@ -5,6 +5,7 @@ import { mentorsRouter} from "./Routers/mentors.js"
 import { userRouter } from "./Routers/users.js";
 import { isAuthenticated } from "./Authtentication/auth.js";
 import jwt  from "jsonwebtoken";
+import cors from "cors"
 
 // configure the environment
 dotenv.config();
@@ -14,6 +15,7 @@ const PORT = process.env.PORT
 const app = express();
 //middleware
 app.use(express.json());
+app.use(cors());
 
 //students routers
 app.use("/students",isAuthenticated, studentsRouter)
