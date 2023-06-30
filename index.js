@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 //students routers
-app.use("/students",isAuthenticated, studentsRouter)
+app.use("/students", studentsRouter)
 app.use("/mentors", mentorsRouter)
 app.use("/users",userRouter)
 
